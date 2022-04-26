@@ -1,0 +1,16 @@
+.hero__main-title {
+  margin-bottom: 30px;
+  margin-top: 0;
+  @include fonts(900, 44px, 60px);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-font-color);
+}
+
+@media screen and (max-width: 480) {
+  .hero__main-title {
+    @include fonts(500, 40px, 47px);
+  }
+}

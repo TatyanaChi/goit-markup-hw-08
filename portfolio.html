@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo-header link" href=""><span class="accent">Web</span>Studio</a><div class="container">
+            <nav class="navigation">
+                <ul class="nav-list list">
+                    <li class="nav-list__item"><a class="nav-list__link link" href="./index.html">Студия</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link link curent" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <a class="contact-email link" href="mailto:info@devstudio.com">
+                <svg class="contact-email__icon" width="16" height="12">
+                    <use href="./img/sprite.svg#email"></use>
+                </svg>info@devstudio.com</a>
+            <a class="contact-number link" href="tel:+380961111111">
+                <svg class="contact-number__icon" width="10" height="16">
+                    <use href="./img/sprite.svg#smartphone"></use>
+                </svg>+38 096 111 11 11</a>
+        </div>
+    </header>
+    <main>
+        <!-- hero -->
+        <section class="hero-filter section">
+            <div class="container filter-container">
+                <h1 class="main-title-filter" hidden>Фильтры</h1>
+                <ul class="filter-list list">
+                    <li class="filter-list-item"><button class="btn-filters" type="button">Все</button></li>
+                    <li class="filter-list-item"><button class="btn-filters" type="button">Веб-сайты</button></li>
+                    <li class="filter-list-item"><button class="btn-filters" type="button">Приложения</button></li>
+                    <li class="filter-list-item"><button class="btn-filters" type="button">Дизайн</button></li>
+                    <li class="filter-list-item"><button class="btn-filters" type="button">Маркетинг</button></li>
+                </ul>
+            </div>
+            <div class=" container tile-container">
+                <ul class="tile-list list">
+                    <li class="tile-list-item">
+                        <a class="tile-link link" href="">
+                            <div class="tile-overlay-wrapper">
+                                <img class="tile-list-img" src="./img/portfolio-img1.jpg" alt="Технокряк" width="370" height="294">
+                                <p class="subtitle-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tile-container-wrapper">
+                                <h2 class="title-filter">Технокряк</h2>
+                                <p class="subtitle-filter">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-list-item">
+                        <a class="tile-link link" href="">
+                            <div class="tile-overlay-wrapper">
+                                <img class="tile-list-img"src="./img/portfolio-img2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <p class="subtitle-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tile-container-wrapper">
+                                <h2 class="title-filter">Постер New Orlean vs Golden Star</h2>
+                                <p class="subtitle-filter">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-list-item">
+                        <a class="tile-link link" href="">
+                            <div class="tile-overlay-wrapper">
+                                <img class="tile-list-img"src="./img/portfolio-img3.jpg" alt="Ресторан Seafood" width="370" height="294">
+                                <p class="subtitle-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tile-container-wrapper">
+                                <h2 class="title-filter">Ресторан Seafood</h2>
+                                <p class="subtitle-filter">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-list-item">
+                        <a class="tile-link link" href="">
+                            <div class="tile-overlay-wrapper">
+                                <img class="tile-list-img"src="./img/portfolio-img4.jpg" alt="Накладные наушники" width="370" height="294">
+                                <p class="subtitle-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tile-container-wrapper">
+                                <h2 class="title-filter">Проект Prime</h2>
+                                <p class="subtitle-filter">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-list-item">
+                        <a class="tile-link link" href="">
+                            <div class="tile-overlay-wrapper">
+                                <img class="tile-list-img"src="./img/portfolio-img5.jpg" alt="Проект коробки" width="370" height="294">
+                                <p class="subtitle-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tile-container-wrapper">
+                                <h2 class="title-filter">Проект Boxes</h2>
+                                <p class="subtitle-filter">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-list-item">
+                        <a class="tile-link link" href="">
+                            <div class="tile-overlay-wrapper">
+                                <img class="tile-list-img"src="./img/portfolio-img6.jpg" alt="Монитор mac" width="370" height="294">
+                                <p class="subtitle-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tile-container-wrapper">
+                                <h2 class="title-filter">Inspiration has no Borders</h2>
+                                <p class="subtitle-filter">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-list-item">
+                        <a class="tile-link link" href="">
+                            <div class="tile-overlay-wrapper">
+                                <img class="tile-list-img"src="./img/portfolio-img7.jpg" alt="Издание Limited Edition" width="370" height="294">
+                                <p class="subtitle-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tile-container-wrapper">
+                                <h2 class="title-filter">Издание Limited Edition</h2>
+                                <p class="subtitle-filter">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-list-item">
+                        <a class="tile-link link" href="">
+                            <div class="tile-overlay-wrapper">
+                                <img class="tile-list-img"src="./img/portfolio-img8.jpg" alt="Фото бирки" width="370" height="294">
+                                <p class="subtitle-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tile-container-wrapper">
+                                <h2 class="title-filter">Проект LAB</h2>
+                                <p class="subtitle-filter">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tile-list-item">
+                        <a class="tile-link link" href="">
+                            <div class="tile-overlay-wrapper">
+                                <img class="tile-list-img"src="./img/portfolio-img9.jpg" alt="Масbook" width="370" height="294">
+                                <p class="subtitle-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tile-container-wrapper">
+                                <h2 class="title-filter">Growing Business</h2>
+                                <p class="subtitle-filter">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+        <div class="footer-adress-container">
+        <a class="logo-footer link" href=""><span class="accent">Web</span>Studio</a>
+        <address class="address">
+            <ul class="contact-list list">
+                <li class="contact-list-item">
+                    <a class="contact-list link" href="https://goo.gl/maps/4rKQJ6UGh4Y5ATCG8" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="contact-list-item">
+                    <a class="contact-email-bottom link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="contact-list-item">
+                    <a class="contact-number-bottom link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+    </div>
+    <div class="join-container">
+        <h3 class="subtitle-footer">присоединяйтесь</h3>
+        <ul class="join-list list">
+            <li class="join-list-item">
+                <a class="join-list-link" href="">
+                    <svg class="join-list-icon" width="20" height="20">
+                        <use href="./img/sprite.svg#instagram">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="join-list-item">
+                <a class="join-list-link" href="">
+                    <svg class="join-list-icon" width="20" height="20">
+                        <use href="./img/sprite.svg#twitter">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="join-list-item">
+                <a class="join-list-link" href="">
+                    <svg class="join-list-icon" width="20" height="20">
+                        <use href="./img/sprite.svg#facebook">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="join-list-item">
+                <a class="join-list-link" href="">
+                    <svg class="join-list-icon" width="20" height="20">
+                        <use href="./img/sprite.svg#linkedin">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <form class="contact-form">
+        <h3 class="subtitle-footer">Подпишитесь на рассылку</h3>
+    <div class="subscribe-wrapper">
+        <input name="user-email" type="text" class="footer-form-input" placeholder="E-mail">
+        <button type="submit" class="submit-btn">Подписаться</button>
+    </div>
+    </form>
+    </div>
+    </footer>
+</body>
+</html>

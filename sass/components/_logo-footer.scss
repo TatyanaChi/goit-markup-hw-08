@@ -1,0 +1,7 @@
+.logo-footer {
+  display: block;
+  font-family: var(--secondary-font-family);
+  color: var(--primary-font-color);
+  @include fonts(700, 26px, 31px);
+  margin-bottom: 20px;
+}

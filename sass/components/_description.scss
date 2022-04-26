@@ -1,0 +1,8 @@
+.features__description {
+  font-family: inherit;
+  font-style: normal;
+  @include fonts(400, 14px, 24px);
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}

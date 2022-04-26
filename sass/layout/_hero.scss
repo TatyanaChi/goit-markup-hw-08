@@ -1,0 +1,17 @@
+.hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/header-Img.jpg");
+  background-size: cover;
+  background-color: #c4c4c4;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero-container {
+  display: block;
+  align-items: center;
+}
