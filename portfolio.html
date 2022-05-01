@@ -22,14 +22,71 @@
                     <li class="nav-list__item"><a class="nav-list__link link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <a class="contact-email link" href="mailto:info@devstudio.com">
-                <svg class="contact-email__icon" width="16" height="12">
-                    <use href="./img/sprite.svg#email"></use>
-                </svg>info@devstudio.com</a>
-            <a class="contact-number link" href="tel:+380961111111">
-                <svg class="contact-number__icon" width="10" height="16">
-                    <use href="./img/sprite.svg#smartphone"></use>
-                </svg>+38 096 111 11 11</a>
+            <button class="mobile-menu-btn" type="button" data-menu-open>
+                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                    <use href="./img/sprite.svg#burger-menu-icon"></use>
+                </svg>
+            </button>
+            <ul class="contact list">
+                <li class="contact__item">
+                    <a class="contact__link link" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon" width="16" height="12">
+                            <use href="./img/sprite.svg#email"></use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link link" href="tel:+380961111111">
+                        <svg class="contact__icon" width="10" height="16">
+                            <use href="./img/sprite.svg#smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
+            </ul>  
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./img/sprite.svg#close-mobile-icon"></use>
+                    </svg>
+                 </button>
+                 <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-nav__list list">
+                        <li class="mobile-menu-nav__item">
+                            <a class="mobile-menu-nav__link link current" href="">Студия</a>
+                         </li>
+                        <li class="mobile-menu-nav__item">
+                            <a class="mobile-menu-nav__link link" href="">Портфолио</a>
+                         </li>
+                        <li class="mobile-menu-nav__item">
+                            <a class="mobile-menu-nav__link link" href="">Контакты</a>
+                         </li>
+                     </ul>
+                 </nav>
+                 <ul class="mobile-menu-contact__list list">
+                     <li class="mobile-menu-contact__item">
+                         <a class="mobile-menu-contact__link--accent link" href="">+38 096 111 11 11</a>
+                     </li>
+                     <li class="mobile-menu-contact__item">
+                         <a class="mobile-menu-contact__link link" href="">info@devstudio.com</a>
+                     </li>
+                 </ul>
+                 <ul class="mobile-menu-social__list list">
+                     <li class="mobile-menu-social__item"> 
+                        <a class="mobile-menu-social__link link" href="">Instagram</a>
+                      </li>
+                     <li class="mobile-menu-social__item">
+                         <a class="mobile-menu-social__link link" href="">Twitter</a>
+                      </li>
+                     <li class="mobile-menu-social__item">
+                         <a class="mobile-menu-social__link link" href="">Facebook</a>
+                      </li>
+                      <li class="mobile-menu-social__item">
+                         <a class="mobile-menu-social__link link" href="">LinkedIn</a>
+                      </li>
+                    </ul>
+            </div>  
         </div>
     </header>
     <main>
@@ -38,16 +95,16 @@
             <div class="container filter-container">
                 <h1 class="main-title-filter" hidden>Фильтры</h1>
                 <ul class="filter-list list">
-                    <li class="filter-list-item"><button class="btn-filters" type="button">Все</button></li>
-                    <li class="filter-list-item"><button class="btn-filters" type="button">Веб-сайты</button></li>
-                    <li class="filter-list-item"><button class="btn-filters" type="button">Приложения</button></li>
-                    <li class="filter-list-item"><button class="btn-filters" type="button">Дизайн</button></li>
-                    <li class="filter-list-item"><button class="btn-filters" type="button">Маркетинг</button></li>
+                    <li class="filter-list__item"><button class="btn-filters" type="button">Все</button></li>
+                    <li class="filter-list__item"><button class="btn-filters" type="button">Веб-сайты</button></li>
+                    <li class="filter-list__item"><button class="btn-filters" type="button">Приложения</button></li>
+                    <li class="filter-list__item"><button class="btn-filters" type="button">Дизайн</button></li>
+                    <li class="filter-list__item"><button class="btn-filters" type="button">Маркетинг</button></li>
                 </ul>
             </div>
-            <div class=" container tile-container">
+             <div class=" container tile-container">
                 <ul class="tile-list list">
-                    <li class="tile-list-item">
+                    <li class="tile-list__item">
                         <a class="tile-link link" href="">
                             <div class="tile-overlay-wrapper">
                                 <img class="tile-list-img" src="./img/portfolio-img1.jpg" alt="Технокряк" width="370" height="294">
@@ -59,7 +116,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tile-list-item">
+                    <li class="tile-list__item">
                         <a class="tile-link link" href="">
                             <div class="tile-overlay-wrapper">
                                 <img class="tile-list-img"src="./img/portfolio-img2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
@@ -71,7 +128,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tile-list-item">
+                    <li class="tile-list__item">
                         <a class="tile-link link" href="">
                             <div class="tile-overlay-wrapper">
                                 <img class="tile-list-img"src="./img/portfolio-img3.jpg" alt="Ресторан Seafood" width="370" height="294">
@@ -83,7 +140,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tile-list-item">
+                    <li class="tile-list__item">
                         <a class="tile-link link" href="">
                             <div class="tile-overlay-wrapper">
                                 <img class="tile-list-img"src="./img/portfolio-img4.jpg" alt="Накладные наушники" width="370" height="294">
@@ -95,7 +152,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tile-list-item">
+                    <li class="tile-list__item">
                         <a class="tile-link link" href="">
                             <div class="tile-overlay-wrapper">
                                 <img class="tile-list-img"src="./img/portfolio-img5.jpg" alt="Проект коробки" width="370" height="294">
@@ -107,7 +164,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tile-list-item">
+                    <li class="tile-list__item">
                         <a class="tile-link link" href="">
                             <div class="tile-overlay-wrapper">
                                 <img class="tile-list-img"src="./img/portfolio-img6.jpg" alt="Монитор mac" width="370" height="294">
@@ -119,7 +176,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tile-list-item">
+                    <li class="tile-list__item">
                         <a class="tile-link link" href="">
                             <div class="tile-overlay-wrapper">
                                 <img class="tile-list-img"src="./img/portfolio-img7.jpg" alt="Издание Limited Edition" width="370" height="294">
@@ -131,7 +188,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tile-list-item">
+                    <li class="tile-list__item">
                         <a class="tile-link link" href="">
                             <div class="tile-overlay-wrapper">
                                 <img class="tile-list-img"src="./img/portfolio-img8.jpg" alt="Фото бирки" width="370" height="294">
@@ -143,7 +200,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="tile-list-item">
+                    <li class="tile-list__item">
                         <a class="tile-link link" href="">
                             <div class="tile-overlay-wrapper">
                                 <img class="tile-list-img"src="./img/portfolio-img9.jpg" alt="Масbook" width="370" height="294">
@@ -158,56 +215,56 @@
                 </ul>
             </div>
             
-        </section>
-    </main>
+        </section> 
+    <!-- </main>
     <footer class="footer">
         <div class="container footer-container">
         <div class="footer-adress-container">
         <a class="logo-footer link" href=""><span class="accent">Web</span>Studio</a>
         <address class="address">
-            <ul class="contact-list list">
-                <li class="contact-list-item">
-                    <a class="contact-list link" href="https://goo.gl/maps/4rKQJ6UGh4Y5ATCG8" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
+            <ul class="adress__list list">
+                <li class="adress__item">
+                    <a class="adress__link link" href="https://goo.gl/maps/4rKQJ6UGh4Y5ATCG8" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
                 </li>
-                <li class="contact-list-item">
-                    <a class="contact-email-bottom link" href="mailto:info@example.com">info@example.com</a>
+                <li class="adress__item">
+                    <a class="adress__link--bottom link" href="mailto:info@example.com">info@example.com</a>
                 </li>
-                <li class="contact-list-item">
-                    <a class="contact-number-bottom link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <li class="adress__item">
+                    <a class="adress__link--bottom link" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
             </ul>
         </address>
     </div>
-    <div class="join-container">
+    <div class="join__container">
         <h3 class="subtitle-footer">присоединяйтесь</h3>
-        <ul class="join-list list">
-            <li class="join-list-item">
-                <a class="join-list-link" href="">
-                    <svg class="join-list-icon" width="20" height="20">
+        <ul class="join__list list">
+            <li class="join__item">
+                <a class="join__link" href="">
+                    <svg class="join__icon" width="20" height="20">
                         <use href="./img/sprite.svg#instagram">
                         </use>
                     </svg>
                 </a>
             </li>
-            <li class="join-list-item">
-                <a class="join-list-link" href="">
-                    <svg class="join-list-icon" width="20" height="20">
+            <li class="join__item">
+                <a class="join__link" href="">
+                    <svg class="join__icon" width="20" height="20">
                         <use href="./img/sprite.svg#twitter">
                         </use>
                     </svg>
                 </a>
             </li>
-            <li class="join-list-item">
-                <a class="join-list-link" href="">
-                    <svg class="join-list-icon" width="20" height="20">
+            <li class="join__item">
+                <a class="join__link" href="">
+                    <svg class="join__icon" width="20" height="20">
                         <use href="./img/sprite.svg#facebook">
                         </use>
                     </svg>
                 </a>
             </li>
-            <li class="join-list-item">
-                <a class="join-list-link" href="">
-                    <svg class="join-list-icon" width="20" height="20">
+            <li class="join__item">
+                <a class="join__link" href="">
+                    <svg class="join__icon" width="20" height="20">
                         <use href="./img/sprite.svg#linkedin">
                         </use>
                     </svg>
@@ -223,6 +280,7 @@
     </div>
     </form>
     </div>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.contact-list {
+.adress__link {
   font-style: normal;
   @include fonts(400, 14px, 24px);
   letter-spacing: 0.03em;
@@ -6,15 +6,14 @@
   color: var(--primary-font-color);
 }
 
-.contact-email-bottom,
-.contact-number-bottom {
+.adress__link--bottom {
   font-style: normal;
   @include fonts(400, 14px, 24px);
   letter-spacing: 0.03em;
   color: var(--bottom-font-color);
 }
 
-.contact-list-item {
+.adress__item {
   margin-bottom: 9px;
 
   &:last-child {

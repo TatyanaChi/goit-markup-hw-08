@@ -24,8 +24,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
   padding: 40px;
   background-color: var(--primary-background-light-theme);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -35,6 +35,16 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close-button {
@@ -61,18 +71,25 @@
 .form-description {
   font-family: inherit;
   font-style: normal;
-  @include fonts(700, 20px, 23px);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--primary-text-color);
+
+  @media screen and (max-width: 1199px) {
+    @include fonts(700, 20px, 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(700, 20px, 23px);
+  }
 }
 
 .contact-form-field {
   display: block;
   margin-bottom: 10px;
   font-style: normal;
-  @include fonts(400, 12px, 20px);
+  @include fonts(400, 12px, 14px);
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
 }
@@ -132,7 +149,10 @@
 
 .contact-form-checkbox-wrapper {
   margin-bottom: 30px;
-  padding-left: 15px;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 15px;
+  }
 }
 
 .contact-form-checkbox-label {
@@ -140,10 +160,18 @@
   align-items: center;
   font-family: inherit;
   font-style: normal;
-  @include fonts(400, 14px, 24px);
+  // @include fonts(400, 14px, 24px);
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+
+  @media screen and (max-width: 1199px) {
+    @include fonts(400, 12px, 14px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(400, 14px, 24px);
+  }
 
   &::before {
     content: "";
@@ -165,6 +193,17 @@
   }
 }
 
+// @media screen and (max-width: 1199px) {
+//   .contact-form-checkbox-label {
+//     @include fonts(400, 12px, 14px);
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .contact-form-checkbox-label {
+//     @include fonts(400, 14px, 24px);
+//   }
+// }
 .form-list-link {
   color: var(--accent-color);
 }
