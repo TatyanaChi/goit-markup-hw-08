@@ -1,7 +1,9 @@
 .header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 
 .header {
@@ -133,12 +135,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
+
   .mobile-menu-btn {
     display: none;
   }
+
   .contact {
-    display: block;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .navigation {
@@ -150,7 +157,7 @@
     align-items: center;
   }
 
-  .nav-list__item {
+  .nav-list__item:not(:last-child) {
     margin-right: 50px;
   }
 
@@ -222,10 +229,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .header__container {
+    justify-content: start;
+  }
+
   .contact {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: row;
   }
 
   .contact__item {
