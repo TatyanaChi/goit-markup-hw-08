@@ -16,10 +16,10 @@
         <div class="container header__container">
             <a class="logo-header link" href=""><span class="accent">Web</span>Studio</a>
             <nav class="navigation">
-                <ul class="nav-list list">
-                    <li class="nav-list__item"><a class="nav-list__link link curent" href="./index.html">Студия</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link link" href="">Контакты</a></li>
+                <ul class="navigation__list list">
+                    <li class="navigation__item"><a class="navigation__link link curent" href="./index.html">Студия</a></li>
+                    <li class="navigation__item"><a class="navigation__link link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="navigation__item"><a class="navigation__link link" href="">Контакты</a></li>
                 </ul>
             </nav>
             <button class="mobile-menu-btn" type="button" data-menu-open>
@@ -147,19 +147,28 @@
                 <ul class="jobs__list list">
                     <li class="jobs__item">
                         <div class="jobs__img-wrapper">
-                        <img class="jobs__img" src="./img/about-img-1.jpg" alt="Создание кода" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/About-img/about-img1.jpg 1x, ./img/About-img/about@2x-img1.jpg 2x" media="(min-width:1200px)">
+                                <img class="jobs__img" src="./img/About-img/about-img1.jpg" alt="Создание кода" width="370" height="294">
+                            </picture>
                         <p class="jobs__subtitle-img">Десктопные приложения</p>
                     </div>
                     </li>
                     <li class="jobs__item">
                         <div class="jobs__img-wrapper">
-                        <img class="jobs__img" src="./img/about-img-2.jpg" alt="Подбор дизайна" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/About-img/about-img2.jpg 1x, ./img/About-img/about@2x-img2.jpg 2x" media="(min-width:1200px)">
+                                <img class="jobs__img" src="./img/About-img/about-img2.jpg" alt="Подбор дизайна" width="370" height="294">
+                            </picture>                  
                         <p class="jobs__subtitle-img">Мобильные приложения</p>
                     </div>
                     </li>
                     <li class="jobs__item">
                         <div class="jobs__img-wrapper">
-                        <img class="jobs__img" src="./img/about-img-3.jpg" alt="Поиск цвета" width="370" height="294">
+                            <picture>
+                                <source srcset="./img/About-img/about-img3.jpg 1x, ./img/About-img/about@2x-img3.jpg 2x" media="(min-width:1200px)">
+                                <img class="jobs__img" src="./img/About-img/about-img3.jpg" alt="Поиск цвета" width="370" height="294">
+                            </picture>        
                         <p class="jobs__subtitle-img">Дизайнерские решения</p>
                     </div>
                     </li>
@@ -172,7 +181,12 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img class="team__card-img" src="./img/team-img1.jpg" alt="Product Designer" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/Team-img/team-igor-img.jpg 1x, ./img/Team-img/team-igor@2x-img.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/Team-img/team-igor-tab-img.jpg 1x, ./img/Team-img/team-igor-tab@2x-img.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/Team-img/team-igor-mob-img.jpg 1x, ./img/Team-img/team-igor-mob@2x-img.jpg 2x" media="(max-width:767px)">
+                            <img class="team__card-img" src="./img/Team-img/team-igor-img.jpg" alt="Фото Игоря Демьяненко" width="270" height="260">
+                        </picture>
                         <div class="team__wrapper">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__description" lang="en">Product Designer</p>
@@ -209,7 +223,12 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__card-img" src="./img/team-img2.jpg" alt="Frontend Developer" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/Team-img/team-olga-img.jpg 1x, ./img/Team-img/team-olga@2x-img.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/Team-img/team-olga-tab-img.jpg 1x, ./img/Team-img/team-olga-tab@2x-img.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/Team-img/team-olga-mob-img.jpg 1x, ./img/Team-img/team-olga-mob@2x-img.jpg 2x" media="(max-width:767px)">
+                            <img class="team__card-img" src="./img/Team-img/team-olga-img.jpg" alt="Фото Ольги Репиной" width="270" height="260">
+                        </picture>            
                         <div class="team__wrapper">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__description" lang="en">Frontend Developer</p>
@@ -246,7 +265,12 @@
                         </div> 
                     </li>  
                     <li class="team__item">
-                        <img class="team__card-img" src="./img/team-img3.jpg" alt="Marketing" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/Team-img/team-kolja-img.jpg 1x, ./img/Team-img/team-kolja@2x-img.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./img/Team-img/team-kolja-tab-img.jpg 1x, ./img/Team-img/team-kolja-tab@2x-img.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./img/Team-img/team-kolja-mob-img.jpg 1x, ./img/Team-img/team-kolja-mob@2x-img.jpg 2x" media="(max-width:767px)">
+                            <img class="team__card-img" src="./img/Team-img/team-kolja-img.jpg" alt="Фото Николая Тарасова" width="270" height="260">
+                        </picture>            
                         <div class="team__wrapper">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__description" lang="en">Marketing</p>
@@ -283,7 +307,12 @@
                         </div>
                     </li> 
                     <li class="team__item">
-                        <img class="team__card-img" src="./img/team-img4.jpg" alt="UI Designer" width="270" height="260">
+                        <picture>
+                            <source src="./img/Team-img/team-michel-img.jpg 1x, ./img/Team-img/team-michel@2x-img.jpg 2x" media="(min-width:1200px)">
+                            <source src="./img/Team-img/team-michel-tab-img.jpg 1x, ./img/Team-img/team-michel-tab@2x-img.jpg 2x" media="(min-width:768px)">
+                            <source src="./img/Team-img/team-michel-mob-img.jpg 1x, ./img/Team-img/team-michel-mob@2x-img.jpg 2x"  media="(max-width:767px)">
+                            <img class="team__card-img" src="./img/Team-img/team-michel-img.jpg" alt="Фото Михаила Ермакова" width="270" height="260">
+                        </picture>
                         <div class="team__wrapper">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__description" lang="en">UI Designer</p>

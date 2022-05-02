@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .nav-list {
+  .navigation__list {
     display: none;
   }
 
@@ -152,12 +152,12 @@
     display: flex;
   }
 
-  .nav-list {
+  .navigation__list {
     display: flex;
     align-items: center;
   }
 
-  .nav-list__item:not(:last-child) {
+  .navigation__item:not(:last-child) {
     margin-right: 50px;
   }
 
@@ -165,7 +165,7 @@
     display: none;
   }
 
-  .nav-list__link {
+  .navigation__link {
     position: relative;
     display: block;
     @include fonts(500, 14px, 16px);
