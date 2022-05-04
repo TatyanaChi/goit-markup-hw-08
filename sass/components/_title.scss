@@ -1,8 +1,13 @@
 .title {
   font-style: normal;
-  @include fonts(700, 36px, 42px);
+  @include fonts(700, 28px, 33px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(700, 36px, 42px);
+    margin-bottom: 50px;
+  }
 }

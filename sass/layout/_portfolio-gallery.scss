@@ -15,9 +15,13 @@
   margin-right: 8px;
 }
 
-.current {
+.btn--current {
   background-color: var(--accent-color);
   color: var(--primary-font-color);
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .tile__list {
